@@ -1,43 +1,45 @@
-var target = 0;
+$.fn.skill = function() {
 
-var cargarPagina = function () {
-	// Elementos
-	var $botones = $(".control");
-	var $anterior = $(".previous");
-	var $siguiente = $(".next");
+	mSkill = this;
+  $(window).on('scroll', function() { // las animaciones se dispararan cuando el recuadro este visible en el viewport
 
-	// Eventos
-	$botones.click(cambiarImagen)
-	$anterior.click(anteriorImagen);
-	$siguiente.click(siguienteImagen);
-};
+	mSkill.find('.skillBar').each(function() {
 
-var cambiarImagen = function () {
-	target = parseInt($(this).data("target"));
-	mostrarImagen(target);
-};
+		if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.90 &&!$(this).hasClass("sk-fired")) {
+			//una vez que cada skill bar esta en el viewport
 
-var mostrarImagen = function (target) {
-	var $lastSlide = $("div.active");
-	var $slide = $("div[data-slide='" + target + "']");
-	$lastSlide.removeClass("active");
-	$slide.addClass("active");
-};
+			$(this).addClass('sk-fired'); //agregamos una clase como bandera para evitar que se vuelva a reproducir la animacion
+			var defaultPercentage = "50%";
+			var color = $(this).attr('skill-color');
+			var defaultColor = "white";
+			//animamos el ancho de cada barra
+			if($(this).attr('skill-percentage')) {
+				$(this).width($(this).attr('skill-percentage'));
+			} else {
+				$(this).width(defaultPercentage);
+			}
 
-var anteriorImagen = function (e) {
-	e.preventDefault();
-	target = target - 1;
-	target = (target < 0) ? 3 : target;
-	mostrarImagen(target);
-};
+			//seteamos el color
 
-var siguienteImagen = function (e) {
-	e.preventDefault();
-	target = target + 1;
-	target = (target > 3) ? 0 : target;
-	mostrarImagen(target);mostrarImagen(target);
-};
+			if(color) {
+				$(this).css('background-color', color);
+			} else {
+				$(this).css('background-color',defaultColor);
+			}
 
+			//buscamos las imagenes para animarlas
+			$(this).parent().find(".skill-image").each(function() {
+				var imagen = $(this);
+				setInterval(function() {
 
+					imagen.show().addClass("animated").addClass("bounceIn");
+				}, 2000);
 
-$(document).ready(cargarPagina());
+			});
+			}
+		});
+
+}	);
+
+     return mSkill;
+}

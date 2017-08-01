@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 *{
   font-family: 'Questrial', sans-serif;
 }
@@ -11,9 +13,8 @@ body{
 }
 
 .texto-rosa{
-  color: rgb(255, 32, 99);
+  color: rgb(255, 36, 92);
 }
-
 
 .fondo-negro{
   background-color: rgb(0, 0, 0);
@@ -32,7 +33,7 @@ body{
   margin-top: 10%;
 }*/
 .container-principal--acercadeYu{
-  margin-top: 10%;
+  margin-top: 2%;
   margin-bottom: 10%;
 
 }
@@ -44,10 +45,32 @@ body{
   margin-left: 20%;
 }
 
+.container-principal-skills{
+  border: solid 1px rgb(205, 205, 205);
+  width: 800px;
+  height: 240px;
+  margin-left: 20%;
+}
+
+.container-principal-skills-soft{
+  border: solid 1px rgb(205, 205, 205);
+  width: 800px;
+  height: 180px;
+  margin-left: 20%;
+  margin-bottom: 10%;
+}
+
+.container-principal-contacto{
+  border: solid 1px rgb(205, 205, 205);
+  width: 400px;
+  height: 400px;
+}
+
+
 .imagen-nombreYurian{
   margin-top: 0%;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 
 .imagen-yurianBailando{
@@ -59,10 +82,132 @@ body{
   margin-left: 0px;
   margin: 3%;
 }
+.btn-acercaDeMi:hover, .btn-proyectos:hover, .btn-skills:hover, .btn-contacto:hover{
+  background-color: rgb(255, 36, 92);
+
+}
+
+
+
+
+/*PROYECTOS*/
+
+.container-proyectos-lab {
+  border: solid 1px rgb(205, 205, 205);
+  width: 980px;
+  height: 280px;
+  margin-top: 3%;
+  padding-top: 3%;
+  padding-left: 3%;
+  margin-bottom: 7%;
+}
+
+.container-proyectos-propios {
+  border: solid 1px rgb(205, 205, 205);
+  width: 980px;
+  height: 280px;
+  margin-top: 3%;
+  padding-top: 3%;
+  padding-left: 14%;
+  margin-bottom: 7%;
+}
+
+
+.img-proyectos {
+  height: 200px;
+  width: 300px;
+}
+
+.img-proyectos:hover {
+  opacity: 1;
+}
+
+.h1-proyectos {
+  padding: 0px;
+  margin: 0px;
+}
+
+.caption-style-4 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.caption-style-4 li {
+  float: left;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.caption-style-4 li:hover .caption {
+  opacity: 2;
+}
+
+.caption-style-4 li:hover .img-proyectos {
+  opacity: 1;
+  transform: scale(1.15, 1.15);
+  -webkit-transform: scale(1.15, 1.15);
+  -moz-transform: scale(1.15, 1.15);
+  -ms-transform: scale(1.15, 1.15);
+  -o-transform: scale(1.15, 1.15);
+}
+
+.caption-style-4 .img-proyectos {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  z-index: 4;
+}
+
+.caption-style-4 .caption {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+.caption-style-4 .img-proyectos {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.caption-style-4 .blur {
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 300px;
+  width: 400px;
+  z-index: 5;
+  position: absolute;
+}
+
+.caption-style-4 .caption-text h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.caption-style-4 .caption-text {
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  top: 5px;
+  left: 0px;
+}
+
+
 
 .page-footer{
   margin-top: 0px;
-  background-color:  rgb(255, 32, 99);
+  background-color:  rgb(255, 36, 92);
 }
 
 .footer-copyright{
@@ -72,4 +217,52 @@ body{
 p{
   display: inline-block;
   margin: 3%;
+}
+
+.div-html5, .div-css3, .div-bootstrap, .div-materialize {
+  height: 5px;
+  width: 60%;
+  margin-top: 3.5%;
+  margin-left: 0px;
+  border-color: rgb(255, 36, 92);
+  background-color: rgb(255, 36, 92);
+  display: inline-block;
+}
+
+.div-js, .div-jquery, .div-github {
+  height: 5px;
+  width: 50%;
+  margin-top: 3.5%;
+  margin-left: 0px;
+  border-color: rgb(255, 36, 92);
+  background-color: rgb(255, 36, 92);
+  display: inline-block;
+}
+
+.div-creatividad, .div-autodidacta, .div-compromiso, .div-trabajoo-equipo, .div-asertividad {
+  height: 5px;
+  width: 90%;
+  margin-top: 3.5%;
+  margin-left: 0px;
+  border-color: rgb(255, 36, 92);
+  background-color: rgb(255, 36, 92);
+  display: inline-block;
+}
+
+.img-labial{
+  height: 6%;
+  width: 6%;
+}
+
+.material-icons{
+ color: rgb(255, 36, 92);
+}
+
+a:hover {
+  color: rgb(255, 36, 92);
+}
+
+.icono-pequeño{
+  width: 5%;
+  height: 5%;
 }
