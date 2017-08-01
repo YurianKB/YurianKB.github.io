@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+/*general*/
+
 *{
   font-family: 'Questrial', sans-serif;
 }
@@ -8,16 +10,31 @@ body{
   background-color: rgb(0,0,0);
   }
 
+  p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+
+/*Colores de texto*/
 .texto-blanco{
   color: rgb(205, 205, 205);
 }
+
 
 .texto-rosa{
   color: rgb(255, 36, 92);
 }
 
+/*colores de fondo*/
+
 .fondo-negro{
   background-color: rgb(0, 0, 0);
+}
+
+.fondo-rosa{
+  background-  color: rgb(255, 36, 92);
 }
 
 .container-btns{
@@ -25,17 +42,52 @@ body{
   margin-left: 33%;
 }
 
+
+/*efecto girar*/
+
+.btn-acercaDeMi{
+   height: 200px;
+   width: 200px;
+   border: 1px;
+   margin: 10px auto;
+   background: #ccc;
+   text-align: center;
+   transition: all 2s ease-in-out;
+}
+
+ .btn-acercaDeMi, .btn-acercaDeMi.hover_effect {
+      transform: rotate(720deg) scale(2,2);
+   }
+
 .container-titulo{
   margin-top: 2%;
 }
 
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+  .btn-acercaDeMi{
+      -webkit-animation: 3s rotate linear infinite;
+      animation: 3s rotate linear infinite;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+  }
+
+
 /*.container-acercademi{
   margin-top: 10%;
 }*/
+
+.div-rosa--acercademi{
+  background-color: rgb(255, 36, 92);
+  width: 50%;
+  height: 100%;
+}
+
 .container-principal--acercadeYu{
   margin-top: 2%;
   margin-bottom: 10%;
-
 }
 
 .container-acercadeYu{
@@ -69,9 +121,11 @@ body{
 
 .imagen-nombreYurian{
   margin-top: 0%;
-  width: 40%;
-  height: 40%;
+  width: 45%;
+  height: 45%;
 }
+
+
 
 .imagen-yurianBailando{
   margin-top: 0px;
@@ -202,8 +256,6 @@ body{
   top: 5px;
   left: 0px;
 }
-
-
 
 .page-footer{
   margin-top: 0px;
