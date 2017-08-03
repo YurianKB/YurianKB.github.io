@@ -98,10 +98,10 @@ body{
 }
 
 .container-principal-skills{
-  border: solid 1px rgb(205, 205, 205);
-  width: 800px;
-  height: 240px;
-  margin-left: 20%;
+    border: solid 1px rgb(205, 205, 205);
+    width: 800px;
+    height: 360px;
+    margin-left: 20%;
 }
 
 .container-principal-skills-soft{
@@ -281,7 +281,7 @@ p{
   display: inline-block;
 }
 
-.div-js, .div-jquery, .div-github {
+.div-js, .div-jquery, .div-github, .div-foundation, .div-sass, .div-pug, .div-handlebars {
   height: 5px;
   width: 50%;
   margin-top: 3.5%;
