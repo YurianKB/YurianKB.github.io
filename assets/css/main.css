@@ -83,7 +83,7 @@ body{
 
 .container-principal--acercadeYu{
   margin-top: 0%;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 
 .foto-yurian{
@@ -127,14 +127,12 @@ body{
   height: 40%;
 }
 
-
-
-
 .btn-acercaDeMi, .btn-proyectos, .btn-skills, .btn-contacto{
   background-color: rgb(42, 42, 42);
   margin-left: 0px;
   margin: 3%;
 }
+
 .btn-acercaDeMi:hover, .btn-proyectos:hover, .btn-skills:hover, .btn-contacto:hover{
   background-color: rgb(255, 36, 92);
 
@@ -146,12 +144,12 @@ body{
 /*PROYECTOS*/
 
 .container-proyectos-lab {
-  border: solid 1px rgb(205, 205, 205);
+/*   border: solid 1px rgb(205, 205, 205);
   width: 980px;
   height: 280px;
+  padding-left: 3%;*/
+
   margin-top: 3%;
-  padding-top: 3%;
-  padding-left: 3%;
   margin-bottom: 7%;
 }
 
@@ -316,4 +314,37 @@ a:hover {
 .icono-pequeño{
   width: 5%;
   height: 5%;
+}
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  animation-name: bounceInUp;
+  animation-iteration-count: 1;
 }
