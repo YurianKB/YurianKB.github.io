@@ -142,18 +142,11 @@ body{
 
 
 /*PROYECTOS*/
-
-.container-proyectos-lab {
-/*   border: solid 1px rgb(205, 205, 205);
-  width: 980px;
-  height: 280px;
-  padding-left: 3%;*/
-
-  margin-top: 3%;
-  margin-bottom: 7%;
+#proyectos, #acerca-de-mi{
+  margin-top: 15%;
 }
 
-.container-proyectos-propios {
+/*.container-proyectos-propios {
   border: solid 1px rgb(205, 205, 205);
   width: 980px;
   height: 280px;
@@ -161,11 +154,16 @@ body{
   padding-top: 3%;
   padding-left: 14%;
   margin-bottom: 7%;
+}*/
+
+.container-proyectos-lab{
+  border: solid 1px rgb(255, 255, 255);
+  padding-top: 20%;
 }
 
 
 .img-proyectos {
-  height: 200px;
+  height: 180px;
   width: 300px;
 }
 
