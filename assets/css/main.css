@@ -79,23 +79,25 @@ body{
   margin-top: 10%;
 }*/
 
-.div-rosa--acercademi{
-  background-color: rgb(255, 36, 92);
-  width: 50%;
-  height: 100%;
-}
+
 
 .container-principal--acercadeYu{
-  margin-top: 2%;
+  margin-top: 0%;
   margin-bottom: 10%;
 }
 
-.container-acercadeYu{
+.foto-yurian{
+  margin-top: 5%;
+  width: 55%;
+  height: 55%;
+}
+
+/*.container-acercadeYu{
   border: solid 1px rgb(205, 205, 205);
   width: 800px;
   height: 450px;
   margin-left: 20%;
-}
+}*/
 
 .container-principal-skills{
     border: solid 1px rgb(205, 205, 205);
@@ -121,15 +123,12 @@ body{
 
 .imagen-nombreYurian{
   margin-top: 0%;
-  width: 45%;
-  height: 45%;
+  width: 40%;
+  height: 40%;
 }
 
 
 
-.imagen-yurianBailando{
-  margin-top: 0px;
-}
 
 .btn-acercaDeMi, .btn-proyectos, .btn-skills, .btn-contacto{
   background-color: rgb(42, 42, 42);
