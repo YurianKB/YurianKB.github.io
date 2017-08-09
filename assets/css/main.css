@@ -104,13 +104,6 @@ body{
   height: 50%;
 }
 
-/*.container-acercadeYu{
-  border: solid 1px rgb(205, 205, 205);
-  width: 800px;
-  height: 450px;
-  margin-left: 20%;
-}*/
-
 .container-principal-skills{
     border: solid 1px rgb(205, 205, 205);
     width: 800px;
@@ -151,30 +144,12 @@ body{
 }
 
 
-
-
 /*PROYECTOS*/
 
 
-/*.container-proyectos-propios {
-  border: solid 1px rgb(205, 205, 205);
-  width: 980px;
-  height: 280px;
-  margin-top: 3%;
-  padding-top: 3%;
-  padding-left: 14%;
-  margin-bottom: 7%;
-}*/
-
-.container-proyectos-lab{
-  border: solid 1px rgb(255, 255, 255);
-  padding-top: 20%;
-}
-
-
-.img-proyectos {
+.img-proyectos{
   height: 180px;
-  width: 300px;
+  width: 330px;
 }
 
 .img-proyectos:hover {
@@ -279,7 +254,6 @@ p{
 .div-html5, .div-css3, .div-bootstrap, .div-materialize {
   height: 5px;
   width: 60%;
-  margin-top: 3.5%;
   margin-left: 0px;
   border-color: rgb(255, 36, 92);
   background-color: rgb(255, 36, 92);
@@ -289,17 +263,6 @@ p{
 .div-js, .div-jquery, .div-github, .div-foundation, .div-sass, .div-pug, .div-handlebars {
   height: 5px;
   width: 50%;
-  margin-top: 3.5%;
-  margin-left: 0px;
-  border-color: rgb(255, 36, 92);
-  background-color: rgb(255, 36, 92);
-  display: inline-block;
-}
-
-.div-creatividad, .div-autodidacta, .div-compromiso, .div-trabajoo-equipo, .div-asertividad {
-  height: 5px;
-  width: 90%;
-  margin-top: 3.5%;
   margin-left: 0px;
   border-color: rgb(255, 36, 92);
   background-color: rgb(255, 36, 92);
@@ -307,8 +270,8 @@ p{
 }
 
 .img-labial{
-  height: 6%;
-  width: 6%;
+  height: 8%;
+  width: 12%;
 }
 
 .material-icons{
@@ -323,6 +286,8 @@ a:hover {
   width: 5%;
   height: 5%;
 }
+
+/*EFECTO LETRAS ACERCA DE MÍ*/
 
 @keyframes bounceInUp {
   from, 60%, 75%, 90%, to {
