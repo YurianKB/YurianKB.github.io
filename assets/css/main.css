@@ -79,6 +79,18 @@ body{
   margin-top: 10%;
 }*/
 
+.boton-inicio{
+  width: 10%;
+  height: 10%;
+}
+
+.material-icons{
+  background-color:  rgb(255, 36, 92);
+}
+
+.material-icons:hover{
+  background-color:  rgb(59, 59, 59);
+}
 
 
 .container-principal--acercadeYu{
@@ -88,8 +100,8 @@ body{
 
 .foto-yurian{
   margin-top: 5%;
-  width: 55%;
-  height: 55%;
+  width: 45%;
+  height: 45%;
 }
 
 /*.container-acercadeYu{
@@ -142,9 +154,7 @@ body{
 
 
 /*PROYECTOS*/
-#proyectos, #acerca-de-mi{
-  margin-top: 15%;
-}
+
 
 /*.container-proyectos-propios {
   border: solid 1px rgb(205, 205, 205);
