@@ -2,12 +2,9 @@
 
 /*general*/
 
-*{
-  font-family: 'Questrial', sans-serif;
-}
-
 body{
   background-color: rgb(0,0,0);
+  font-family: 'Questrial', sans-serif;
   }
 
   p {
@@ -34,7 +31,7 @@ body{
 }
 
 .fondo-rosa{
-  background-  color: rgb(255, 36, 92);
+  background-color: rgb(255, 36, 92);
 }
 
 .container-btns{
@@ -74,32 +71,40 @@ body{
       transform-origin: 50% 50%;
   }
 
+/* nav */
 
-.boton-inicio{
-  width: 10%;
-  height: 10%;
+.nav-wrapper{
+  background-color: rgb(0, 0, 0);
 }
 
-.material-icons{
-  background-color:  rgb(255, 36, 92);
+.logo{
+  width: 70%;
+  height: 70%;
 }
-
-.material-icons:hover{
-  background-color:  rgb(59, 59, 59);
-}
-
 
 .container-principal--acercadeYu{
   margin-top: 0%;
   margin-bottom: 20%;
 }
 
-.foto-yurian{
-  margin-top: 5%;
+/*INICIO*/
+.imagen-nombreYurian{
+  margin-top: 0%;
   width: 50%;
   height: 50%;
 }
 
+
+/*ACERCA DE MI */
+.foto-yurian{
+  margin-top: 15%;
+  width: 50%;
+  height: 50%;
+}
+
+
+
+/*SKILLS*/
 .container-principal-skills{
     border: solid 1px rgb(205, 205, 205);
     width: 800px;
@@ -115,6 +120,7 @@ body{
   margin-bottom: 10%;
 }
 
+/*CONTACTO*/
 .container-principal-contacto{
   border: solid 1px rgb(205, 205, 205);
   width: 400px;
@@ -122,11 +128,7 @@ body{
 }
 
 
-.imagen-nombreYurian{
-  margin-top: 0%;
-  width: 50%;
-  height: 50%;
-}
+
 
 .btn-acercaDeMi, .btn-proyectos, .btn-skills, .btn-contacto{
   background-color: rgb(42, 42, 42);
@@ -233,13 +235,18 @@ body{
   left: 0px;
 }
 
-.page-footer{
-  margin-top: 0px;
-  background-color:  rgb(255, 36, 92);
+/* F O O T E R */
+.footer{
+  padding: 2%;
 }
 
-.footer-copyright{
-  background-color: rgb(255, 255, 255);
+.footer-inicio{
+  padding: 1%;
+  margin-top: 2%;
+}
+
+.div-footer{
+  margin-top: 1000%;
 }
 
 p{
