@@ -40,6 +40,82 @@ body{
 }
 
 
+
+/* nav */
+
+.nav-wrapper{
+  background-color: rgb(0, 0, 0);
+}
+
+.logo{
+  width: 60%;
+  height: 60%;
+}
+
+
+/*INICIO*/
+.imagen-nombreYurian{
+  margin-top: 0%;
+  width: 560px;
+  height: 420px;
+}
+
+.span-borde{
+  padding: 1%;
+}
+
+.container-menu{
+  margin-bottom: 180px;
+}
+/*fixed-action-btn:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 36, 92);
+}*/
+
+
+/*ACERCA DE MI */
+.foto-yurian{
+  margin-top: 0%;
+  width: 350px;
+  height: 300px;
+}
+
+.acerca-de-mi__div{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+/*EFECTO LETRAS ACERCA DE MÍ*/
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft{
+  animation-name: slideInLeft;
+  animation-iteration-count: 1;
+}
 /*efecto girar*/
 
 .btn-acercaDeMi{
@@ -56,8 +132,10 @@ body{
       transform: rotate(720deg) scale(2,2);
    }
 
+
 .container-titulo{
   margin-top: 2%;
+  margin-left: 0px;
 }
 
 @keyframes rotate {from {transform: rotate(0deg);}
@@ -71,40 +149,59 @@ body{
       transform-origin: 50% 50%;
   }
 
-/* nav */
-
-.nav-wrapper{
-  background-color: rgb(0, 0, 0);
-}
-
-.logo{
-  width: 70%;
-  height: 70%;
-}
-
-.container-principal--acercadeYu{
-  margin-top: 0%;
-  margin-bottom: 20%;
-}
-
-/*INICIO*/
-.imagen-nombreYurian{
-  margin-top: 0%;
-  width: 50%;
-  height: 50%;
-}
-
-
-/*ACERCA DE MI */
-.foto-yurian{
-  margin-top: 15%;
-  width: 50%;
-  height: 50%;
-}
-
-
-
 /*SKILLS*/
+#contenedor {
+  width: 25em;
+  height: 1em;
+  margin: 0 auto;
+
+
+  }
+
+#barra-intermedio {
+  width: 0;
+  height: 100%;
+  background: rgb(255, 36, 92);
+  border-radius: 152px 152px 152px 152px;
+  -moz-border-radius: 152px 152px 152px 152px;
+  -webkit-border-radius: 152px 152px 152px 152px;
+}
+
+@keyframes progreso {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
+@keyframes porcentaje {
+from {
+  visibility: visible;
+}
+  0% {
+      content: '0%';
+  }
+  25% {
+      content: '25%';
+  }
+  50% {
+      content: '50%';
+  }
+  75% {
+      content: '75%';
+  }
+  100% {
+      content: '100%';
+  }
+}
+
+#barra-intermedio {
+  animation: progreso 7s linear infinite;
+}
+
+
 .container-principal-skills{
     border: solid 1px rgb(205, 205, 205);
     width: 800px;
@@ -144,10 +241,13 @@ body{
 
 /*PROYECTOS*/
 
+.proyectos__div{
+  margin-bottom: 5%;
+}
 
 .img-proyectos{
-  height: 180px;
-  width: 330px;
+  height: 270px;
+  width: 440px;
 }
 
 .img-proyectos:hover {
@@ -178,11 +278,11 @@ body{
 
 .caption-style-4 li:hover .img-proyectos {
   opacity: 1;
-  transform: scale(1.15, 1.15);
-  -webkit-transform: scale(1.15, 1.15);
-  -moz-transform: scale(1.15, 1.15);
-  -ms-transform: scale(1.15, 1.15);
-  -o-transform: scale(1.15, 1.15);
+  transform: scale(1., 1.);
+  -webkit-transform: scale(1., 1.);
+  -moz-transform: scale(1., 1.);
+  -ms-transform: scale(1., 1.);
+  -o-transform: scale(1., 1.);
 }
 
 .caption-style-4 .img-proyectos {
@@ -229,43 +329,27 @@ body{
   color: #fff;
   position: absolute;
   width: 300px;
-  height: 300px;
+  height: 400px;
   text-align: center;
   top: 5px;
   left: 0px;
 }
 
-/* F O O T E R */
-.footer{
-  padding: 2%;
-}
 
-.footer-inicio{
-  padding: 1%;
-  margin-top: 2%;
-}
+/*S K I L L S */
 
-.div-footer{
-  margin-top: 1000%;
-}
-
-p{
-  display: inline-block;
-  margin: 3%;
-}
-
-.div-html5, .div-css3, .div-bootstrap, .div-materialize {
+.div-html5, .div-css3, .div-bootstrap, .div-materialize, .div-foundation {
   height: 5px;
-  width: 60%;
+  width: 180px;
   margin-left: 0px;
   border-color: rgb(255, 36, 92);
   background-color: rgb(255, 36, 92);
   display: inline-block;
 }
 
-.div-js, .div-jquery, .div-github, .div-foundation, .div-sass, .div-pug, .div-handlebars {
+.div-js, .div-jquery, .div-github, .div-sass, .div-pug, .div-handlebars {
   height: 5px;
-  width: 50%;
+  width: 130px;
   margin-left: 0px;
   border-color: rgb(255, 36, 92);
   background-color: rgb(255, 36, 92);
@@ -273,10 +357,13 @@ p{
 }
 
 .img-labial{
-  height: 8%;
-  width: 12%;
+  height: 20px;
+  width: 30px;
 }
 
+.contenedor, .img-labial{
+  display: inline-block;;
+}
 .material-icons{
  color: rgb(255, 36, 92);
 }
@@ -285,42 +372,29 @@ a:hover {
   color: rgb(255, 36, 92);
 }
 
+.y-c{
+  width: 20%;
+  height: 20%;
+
+}
+
 .icono-pequeño{
   width: 5%;
   height: 5%;
 }
 
-/*EFECTO LETRAS ACERCA DE MÍ*/
-
-@keyframes bounceInUp {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
-  from {
-    opacity: 0;
-    transform: translate3d(0, 3000px, 0);
-  }
-
-  60% {
-    opacity: 1;
-    transform: translate3d(0, -20px, 0);
-  }
-
-  75% {
-    transform: translate3d(0, 10px, 0);
-  }
-
-  90% {
-    transform: translate3d(0, -5px, 0);
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
+.yurian-logo__contacto{
+  width: 20%;
+  height: 20%;
 }
 
-.bounceInUp {
-  animation-name: bounceInUp;
-  animation-iteration-count: 1;
+/* F O O T E R */
+
+.footer-inicio, .footer{
+  padding: 1%;
+}
+
+.container-contacto{
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
