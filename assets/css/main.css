@@ -340,7 +340,7 @@ from {
 
 .div-html5, .div-css3, .div-bootstrap, .div-materialize, .div-foundation {
   height: 5px;
-  width: 180px;
+  width: 160px;
   margin-left: 0px;
   border-color: rgb(255, 36, 92);
   background-color: rgb(255, 36, 92);
@@ -349,7 +349,7 @@ from {
 
 .div-js, .div-jquery, .div-github, .div-sass, .div-pug, .div-handlebars {
   height: 5px;
-  width: 130px;
+  width: 110px;
   margin-left: 0px;
   border-color: rgb(255, 36, 92);
   background-color: rgb(255, 36, 92);
